@@ -16,7 +16,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<div class="row">
 		  		<div class="large-8 large-centered columns">
-
+          <?php if(!is_page('about-me')): ?>
 					<?php while ( have_posts() ) : the_post(); ?>
 
 						<?php get_template_part( 'content', 'page' ); ?>
@@ -28,7 +28,10 @@ get_header(); ?>
 							endif;
 						?>
 
-					<?php endwhile; // end of the loop. ?>
+          <?php endwhile; // end of the loop. ?>
+          <?php else: ?>
+            <?php get_template_part('content', 'about'); ?>
+          <?php endif; ?>
 				</div>
 			</div>
 

@@ -1,0 +1,13 @@
+a, a:hover {
+    color: #b71c1c;
+}
+.top-bar-section ul li > a {
+  color:#827717;
+}
+.top-bar-section ul li.current-menu-item > a {
+  border-bottom: 2px solid #FFC107;
+  color: #FF5722;
+}
+.entry-title a {
+    color: #33691e;
+}

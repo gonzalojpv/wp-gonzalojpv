@@ -162,7 +162,10 @@ function konmi_scripts() {
 	/* Add Custom CSS */
 	wp_enqueue_style( 'konmi-custom-style', get_template_directory_uri() . '/custom.css', array(), '1' );
 	
-	/* Add Foundation JS */
+	/* Add BajlumYuum CSS */
+	wp_enqueue_style( 'bajlumyuum-custom-style', get_template_directory_uri() . '/css/bajlumyuum.css');
+
+  /* Add Foundation JS */
 	wp_enqueue_script( 'foundation-js', get_template_directory_uri() . '/foundation/js/foundation.min.js', array( 'jquery' ), '1', true );
 	wp_enqueue_script( 'foundation-modernizr-js', get_template_directory_uri() . '/foundation/js/vendor/modernizr.js', array( 'jquery' ), '1', true );
 	
