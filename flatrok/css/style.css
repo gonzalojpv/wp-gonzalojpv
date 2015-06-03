@@ -24,10 +24,6 @@ img {
   page-break-inside: avoid;
   max-width: 100% !important;
 }
-a,
-a:visited {
-  color: #4ca5d0;
-}
 a:active,
 a:visited:active,
 a:hover,
@@ -212,6 +208,7 @@ li.small-scale {
   height: 100%;
   background: #f6f6f6;
   position: relative;
+  margin-top: 10px;
 }
 .page-head {
   min-height: 450px;
@@ -357,7 +354,7 @@ li.small-scale {
 }
 .page-head .jobtag span {
   font-weight: normal;
-  background: #4ca5d0;
+  background: #2196F3;
   padding: 5px 15px;
   color: #FFFFFF;
 }
@@ -368,16 +365,16 @@ li.small-scale {
   }
 }
 .page-head .profile-bg {
-  background: #4ca5d0 !important;
+  background: #2196F3 !important;
 }
 .page-head .resume-bg {
-  background: #4ae2b1 !important;
+  background: #558B2F !important;
 }
 .page-head .portfolio-bg {
   background: #9018c5 !important;
 }
 .page-head .contact-bg {
-  background: #e32b1d !important;
+  background: #FF6F00 !important;
 }
 .page-head .nav-bar {
   float: left;
@@ -397,7 +394,7 @@ li.small-scale {
   float: left;
   width: 240px;
   height: 185px;
-  background: #4ca5d0;
+  background: ;
   padding: 35px 65px;
 }
 @media (max-width: 768px) {
@@ -514,7 +511,7 @@ li.small-scale {
 }
 #profile h2,
 #profile h3 {
-  color: #4ca5d0;
+  color: #2196F3;
   font-weight: 600;
   font-size: 18px;
 }
@@ -582,7 +579,7 @@ ul.progress-bubbles li {
   }
 }
 ul.progress-bubbles li.filled-bg {
-  background: #4ca5d0;
+  background: #2196F3;
 }
 #resume {
   margin-top: -155px;
@@ -592,7 +589,7 @@ ul.progress-bubbles li.filled-bg {
 #resume h2,
 #resume h3,
 #resume h5 {
-  color: #4ae2b1;
+  color: #558B2F;
   font-weight: normal;
 }
 #resume h5 {
@@ -624,7 +621,7 @@ ul.progress-bubbles li.filled-bg {
   font-weight: bold;
 }
 #resume .timeline-item .date span {
-  background: #4ae2b1;
+  background: #558B2F;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -641,7 +638,7 @@ ul.progress-bubbles li.filled-bg {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
-  background: #4ae2b1;
+  background: #558B2F;
 }
 #resume .resume-work {
   margin-top: 87px;
@@ -664,7 +661,7 @@ ul.progress-bubbles li.filled-bg {
   margin-bottom: 2px;
 }
 #resume .other-experience ul.tag-area li {
-  background: #4ae2b1;
+  background: #558B2F;
 }
 #portfolio {
   margin-top: -65px;
@@ -738,14 +735,14 @@ ul.tag-area li {
   border-radius: 3px;
   display: inline-block;
   padding: 5px 10px;
-  background: #4ca5d0;
+  background: #2196F3;
   color: #ffffff;
   font-size: 18px;
   margin: 0 3px 15px 0;
   opacity: 0;
 }
 .progress-bar-experience {
-  background-color: #4ae2b1;
+  background-color: #558B2F;
 }
 .progress {
   height: 15px;
@@ -826,7 +823,7 @@ ul.tag-area li {
 #contact h4,
 #contact h5,
 #contact h6 {
-  color: #e32b1d;
+  color: #FF6F00;
   font-weight: normal;
 }
 #contact h2 {
@@ -849,7 +846,7 @@ ul.tag-area li {
   padding-bottom: 20px;
 }
 #contact i {
-  color: #e32b1d;
+  color: #FF6F00;
   font-size: 16px;
   float: left;
   margin-right: 15px;
@@ -900,7 +897,7 @@ ul.tag-area li {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
-  background-color: #e32b1d;
+  background-color: #FF6F00;
   color: white;
   font-weight: 600;
   margin-right: 15px;
@@ -911,7 +908,7 @@ ul.tag-area li {
   }
 }
 .footer {
-  background-color: #4ca5d0;
+  background-color: #2196F3;
   color: white;
 }
 .footer a,
@@ -942,6 +939,6 @@ ul.tag-area li {
 @media all {
   ::selection {
     color: #ffffff;
-    background: #4ca5d0;
+    background: #2196F3;
   }
 }

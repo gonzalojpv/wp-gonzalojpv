@@ -18,9 +18,7 @@
     <script src="<?=  get_template_directory_uri()  ?>/flatrok/js/jquery-1.10.2.min.js"></script>
     <script type="<?=  get_template_directory_uri()  ?>/flatrok/text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
     <script src="<?=  get_template_directory_uri()  ?>/flatrok/js/jquery-ui-1.10.3.custom.min.js"></script>
-    <script src="<?=  get_template_directory_uri()  ?>/flatrok/js/bootstrap.min.js"></script>
     <script src="<?=  get_template_directory_uri()  ?>/flatrok/js/jquery.fancybox.pack.js"></script>
-    <script src="<?=  get_template_directory_uri()  ?>/flatrok/js/jquery.gmap.min.js"></script>
     <script src="<?=  get_template_directory_uri()  ?>/flatrok/js/jquery.isotope.min.js"></script>
     <script src="<?=  get_template_directory_uri()  ?>/flatrok/js/jquery.smoothScroll.js"></script>
     <script src="<?=  get_template_directory_uri()  ?>/flatrok/js/waypoints.min.js"></script>
@@ -47,7 +45,7 @@
             <ul>
                 <li class="nav-item profile-bg">
                     <a href="#profile">
-                        <div class="oval"><i class="fa fa-home"></i><span>Profile</span></div>
+                        <div class="oval"><i class="fa fa-user"></i><span>Profile</span></div>
                     </a>
                 </li>
                 <li class="nav-item resume-bg">
@@ -57,11 +55,11 @@
                 </li>
                 <li class="nav-item portfolio-bg">
                     <a href="#portfolio">
-                        <div class="oval"><i class="fa fa-video-camera"></i><span>Portfolio</span></div>
+                        <div class="oval"><i class="fa fa-code"></i><span>Projects</span></div>
                     </a>
                 </li>
                 <li class="nav-item contact-bg">
-                    <a href="#contact">
+                    <a href="<?= get_permalink( 21 ); ?>">
                         <div class="oval"><i class="fa fa-envelope"></i><span>Contact</span></div>
                     </a>
                 </li>
@@ -75,9 +73,7 @@
 <div id="profile" class="nav-target">
     <div class="row">
         <div class="small-12 medium-offset-1 medium-10 columns">
-            <div class="info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
-                exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea <a href="#contact">commodo consequat</a>.
+            <div class="info">Hola. Actualmente estoy trabajando en mi sitio personal, aún no esta termininado(por si vez cosas raras jeje). Saludos. <a href="<?= get_permalink( 21 ); ?>">Contactame</a>.
             </div>
         </div>
     </div>
@@ -89,62 +85,47 @@
             <h3>Information</h3>
 
             <div class="profile-information">
-                <div class="item">Name: <span>Joe Smith</span></div>
-                <div class="item">Age: <span>27</span></div>
-                <div class="item">From: <span>USA</span></div>
-                <div class="item">Lives In: <span>New York, NY</span></div>
+                <div class="item">Name: <span>Gonzalo Pérez</span></div>
+                <div class="item">Age: <span>29</span></div>
+                <div class="item">From: <span>Mexico</span></div>
+                <div class="item">Lives In: <span>Guadalajara, Jalisco</span></div>
                 <div class="item">Likes:
                     <ul class="tag-area">
                         <li>Programming</li>
                         <li>Running</li>
-                        <li>Sports</li>
-                        <li>Design</li>
-                        <li>Cars</li>
+                        <li>Reading</li>
                     </ul>
                 </div>
             </div>
         </div> <!--End Profile Information -->
-        <div class="small-12 medium-offset-1 medium-3 columns">
+        <div class="small-12 medium-offset-1 medium-6 columns">
             <!--Profile Skills Section 1-->
             <div class="profile-skills">
                 <h2>&nbsp;</h2>
 
-                <h3>Skills</h3>
-
-                <div class="skill-item">
-                    <h5>C# / ASP.NET</h5>
-                    <ul class="progress-bubbles color-bg-profile" data-fill-level="2"></ul>
-                    <p>Tamquam apeirian argumentum vim id. Cu reque quaeque vis, id quo sumo vero.</p>
-                </div>
-                <div class="skill-item">
-                    <h5>HTML / CSS</h5>
-                    <ul class="progress-bubbles color-bg-profile" data-fill-level="7"></ul>
-                    <p></p>
-                </div>
-                <div class="skill-item">
-                    <h5>Java</h5>
-                    <ul class="progress-bubbles color-bg-profile" data-fill-level="5"></ul>
-                    <p></p>
-                </div>
+                <div class="other-experience">
+                <h3>Skill</h3>
+                <ul class="tag-area">
+                    <li>PHP</li>
+                    <li>Ruby</li>
+                    <li>Python</li>
+                    <li>Django</li>
+                    <li>Ruby on Rails</li>
+                    <li>Codeigniter</li>
+                    <li>Wordpress</li>
+                    <li>Javascript</li>
+                    <li>jQuery</li>
+                    <li>Backbone</li>
+                    <li>MySQL</li>
+                    <li>PostgreSQL</li>
+                    <li>MongoDB</li>
+                    <li>Redis</li>
+                    <li>Apache</li>
+                    <li>Linux</li>
+                </ul>
+            </div>
+                
             </div> <!--End Profile Skills Section 1 -->
-        </div>
-        <div class="small-12 medium-3 columns">
-            <!--Profile Skills Section 2 -->
-            <div class="profile-skills">
-                <h2 class="hidden-xs">&nbsp;</h2>
-                <h3 class="hidden-xs">&nbsp;</h3>
-
-                <div class="skill-item">
-                    <h5>MySQL</h5>
-                    <ul class="progress-bubbles color-bg-profile" data-fill-level="9"></ul>
-                    <p></p>
-                </div>
-                <div class="skill-item">
-                    <h5>SQL Server</h5>
-                    <ul class="progress-bubbles color-bg-profile" data-fill-level="5"></ul>
-                    <p></p>
-                </div>
-            </div> <!--End Profile Skills Section 2 -->
         </div>
     </div>
 </div>
@@ -158,40 +139,93 @@
 
             <!--Education-->
             <div class="resume-edu">
-                <h5>Education</h5>
+                <h5>Activities</h5>
                 <div class="timeline-item">
                     <div class="date">
                         <div class="dot"></div>
-                        <span>Jan 2004 - Dec 2006</span>
+                        <span>2011 [May 26 th ]</span>
                     </div>
-                    <h5 class="timeline-title">Yell University</h5>
+                    <h5 class="timeline-title">Conference</h5>
 
-                    <p>Donec blandit aliquam enim ac adipiscing. Quisque tempus lacus quis volutpat mattis. Quisque vel
-                        gravida massa, et pharetra lacus. Nulla facilisi.</p>
+                    <p>Back to the Future: The return of control", by Jon "maddog" Hall Executive Director of Linux International. Paraninfo Enrique Diaz de Leon Universidad de Guadalajara Av. Juarez 975, Centro. Guadalajara, Jal.</p>
                 </div>
                 <div class="timeline-item">
                     <div class="date">
                         <div class="dot"></div>
-                        <span>Feb 2001 - Nov 2003</span>
+                        <span>2010 [May 24 th   the September 30 th ]</span>
                     </div>
-                    <h5 class="timeline-title">Technical School</h5>
+                    <h5 class="timeline-title">Professional stay</h5>
 
-                    <p>Donec blandit aliquam enim ac adipiscing. Quisque tempus lacus quis volutpat mattis. Quisque vel
-                        gravida massa, et pharetra lacus. Nulla facilisi. Duis nisi dui, dapibus non facilisis eu,
-                        laoreet nec sapien. Fusce in tellus luctus, adipiscing est ac, molestie dui.</p>
+                    <p>Project:  Research on Evolutionary Computation and Development of a Genetic Algorithm.
+Centro de Investigaciones en Óptica, A. C.
+León, Gto.</p>
                 </div>
                 <div class="timeline-item">
                     <div class="date">
                         <div class="dot"></div>
-                        <span>Oct 1996 - Dec 2000</span>
+                        <span>2009 [August 3 rd   the December 15 th ]</span>
                     </div>
-                    <h5 class="timeline-title">Great School</h5>
+                    <h5 class="timeline-title">Professional residence</h5>
 
-                    <p>Sed accumsan euismod velit et adipiscing. Vivamus pretium velit in metus accumsan, sed rhoncus
-                        odio porttitor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                        Curae; Pellentesque ac enim nisi. Proin laoreet tortor sit amet nibh tristique malesuada.
-                        Quisque euismod dictum imperdiet. Cras et bibendum nibh.</p>
+                    <p>Project: “Técnicas de Reconstrucción Tridimensional de la Estructura de Objetos”.
+Centro de Investigaciones en Óptica, A. C.
+León, Gto.</p>
                 </div>
+                <div class="timeline-item">
+                    <div class="date">
+                        <div class="dot"></div>
+                        <span>2009</span>
+                    </div>
+                    <h5 class="timeline-title">PUBLICATION</h5>
+
+                    <p>Determinación de la Imbibición de Semillas de Maíz por Segmentación de Imágenes.
+Magazine: InGenio Ciencia y Tecnología, Edición N. 9 año 2009.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="date">
+                        <div class="dot"></div>
+                        <span>2009</span>
+                    </div>
+                    <h5 class="timeline-title">Creativity XXIII National Event</h5>
+
+                    <p>Project: “Sistema de Visión por Computadora para el Estudio de la Germinación de Semillas y
+Desarrollo de Plántulas”.
+Veracruz, Veracruz.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="date">
+                        <div class="dot"></div>
+                        <span>2009 [February – June]</span>
+                    </div>
+                    <h5 class="timeline-title">Counseling</h5>
+
+                    <p>Activity: consultation on the programming languages PHP, Java, C and   C++   for irregular
+students of ITTG.
+Instituto Tecnológico de Tuxtla Gutiérrez.Tuxtla Gutiérrez, Chiapas.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="date">
+                        <div class="dot"></div>
+                        <span>2008 [October 23 rd ]</span>
+                    </div>
+                    <h5 class="timeline-title">Speaker</h5>
+
+                    <p>Conference:  “Sistema   de   Visión   por   Computadora   para   el   Estudio   de   la   Germinación   de
+Semillas y Desarrollo de Plántulas”.
+XXXVI Aniversario del Instituto Tecnológico de Tuxtla Gtz., Chiapas.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="date">
+                        <div class="dot"></div>
+                        <span>2008</span>
+                    </div>
+                    <h5 class="timeline-title">Social service</h5>
+
+                    <p>Activity: consultation on the programming language Matlab and Operating Systems.
+Departamento de División de Estudios de Posgrado e Investigación del ITTG.
+Tuxtla Gutiérrez, Chiapas</p>
+                </div>
+                
             </div> <!--End Education -->
         </div>
 
@@ -203,10 +237,10 @@
                 <div class="timeline-item">
                     <div class="date">
                         <div class="dot"></div>
-                        <span>Feb 2001 - Nov 2003</span>
+                        <span>Dic 2013 - Current year</span>
                     </div>
-                    <h5 class="timeline-title">Great Company</h5>
-                    <span class="job-title">iOS Developer</span>
+                    <h5 class="timeline-title">Semantic Weapons</h5>
+                    <span class="job-title">Software   Developer</span>
 
                     <p>Donec blandit aliquam enim ac adipiscing. Quisque tempus lacus quis volutpat mattis. Quisque vel
                         gravida massa, et pharetra lacus. Nulla facilisi.</p>
@@ -214,94 +248,53 @@
                 <div class="timeline-item">
                     <div class="date">
                         <div class="dot"></div>
-                        <span>Apr 2010 - Jun 2012</span>
+                        <span> Feb 2012 - Dec 2013</span>
                     </div>
-                    <h5 class="timeline-title">Web Company</h5>
-                    <span class="job-title">Python Developer</span>
+                    <h5 class="timeline-title">Softtek</h5>
+                    <span class="job-title">Web Developer</span>
 
-                    <p>Donec blandit aliquam enim ac adipiscing. Quisque tempus lacus quis volutpat mattis. Quisque vel
-                        gravida massa, et pharetra lacus. Nulla facilisi. Duis nisi dui, dapibus non facilisis eu,
-                        laoreet nec sapien. Fusce in tellus luctus, adipiscing est ac, molestie dui.</p>
+                    <p>Web Developer. Front­End and Back­End. using technologies like PHP5, Jquery and jquery
+mobile, CSS, HTML, gmap3, highcharts, Backbone.js, RequireJS, Underscore.js,   Openlayers,
+Redis, Apache, Linux, Codeigniter and MySQL.</p>
                 </div>
                 <div class="timeline-item">
                     <div class="date">
                         <div class="dot"></div>
-                        <span>Oct 2007 - Mar 2010</span>
+                        <span>2012 - 2013</span>
                     </div>
-                    <h5 class="timeline-title">Game Company</h5>
-                    <span class="job-title">Java Developer</span>
+                    <h5 class="timeline-title">Turistica Sureña</h5>
+                    <span class="job-title">Web Developer</span>
 
-                    <p>Sed accumsan euismod velit et adipiscing. Vivamus pretium velit in metus accumsan, sed rhoncus
-                        odio porttitor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                        Curae; Pellentesque ac enim nisi. Proin laoreet tortor sit amet nibh tristique malesuada.
-                        Quisque euismod dictum imperdiet. Cras et bibendum nibh.</p>
+                    <p>Freelance. Developer and Analyst geolocation applications in Turistica sureña company, using
+technologies like PHP5, Javascript(Jquery, gmap3 and API google maps), HTML5, CSS and
+MySQL.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="date">
+                        <div class="dot"></div>
+                        <span>Feb 2011 - Feb 2012</span>
+                    </div>
+                    <h5 class="timeline-title">Grupo VGI</h5>
+                    <span class="job-title">Software   Developer</span>
+
+                    <p>Administrator   and   developer   of   system   VGI   and   creator   of   a   Customer   Relationship
+Management, developed with technology PHP5, JavaScritp, MooTools,  Extjs,  Html, CSS and
+MySQL (Stored Producered)</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="date">
+                        <div class="dot"></div>
+                        <span>Sep 2010 - Feb 2011</span>
+                    </div>
+                    <h5 class="timeline-title">MasTi</h5>
+                    <span class="job-title">Web Developer</span>
+
+                    <p>Software Developer Analyst. Technology PHP5, JavaScript, Extjs, Html and MySQL (Stored
+Producered).</p>
                 </div>
             </div> <!--End Work -->
         </div>
     </div>
-
-    <!--Experience-->
-    <div class="row">
-        <div class="medium-offset-1 medium-10 columns">
-            <div class="resume-experience">
-                <h2>Experience</h2>
-
-                <!--Experience Item-->
-                <div class="experience-item">
-                    <p>PHP</p>
-
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-experience" role="progressbar" data-value="70"
-                             aria-valuemin="0" aria-valuemax="100">
-                            <span class="sr-only">70% Complete (success)</span>
-                        </div>
-                    </div>
-                </div> <!-- End Experience Item -->
-
-                <div class="experience-item">
-                    <p>MySQL</p>
-
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-experience" role="progressbar" data-value="45"
-                             aria-valuemin="0" aria-valuemax="100">
-                            <span class="sr-only">45% Complete (success)</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="experience-item">
-                    <p>PHP</p>
-
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-experience" role="progressbar" data-value="85"
-                             aria-valuemin="0" aria-valuemax="100">
-                            <span class="sr-only">85% Complete (success)</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> <!-- End Experience -->
-
-    <!--Other Experience-->
-    <div class="row">
-        <div class="medium-offset-1 medium-10 columns">
-            <div class="other-experience">
-                <h5>Other Experience</h5>
-                <ul class="tag-area">
-                    <li>Django</li>
-                    <li>Visual Studio</li>
-                    <li>Adobe Illustrator</li>
-                    <li>Adobe Photoshop</li>
-                    <li>Ruby</li>
-                    <li>Rails</li>
-                    <li>Linux</li>
-                    <li>Windows</li>
-                    <li>Mac OSX</li>
-                    <li>MongoDB</li>
-                </ul>
-            </div>
-        </div>
-    </div> <!-- End Other Experience -->
 </div> <!-- End Resume -->
 
 

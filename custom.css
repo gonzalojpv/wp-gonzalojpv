@@ -398,7 +398,9 @@ h1.site-title a {
 .social-navigation a[href*="twitch.tv"]::before {
 	content: "\f516";
 }
-
+.social-navigation a[href*="gitlab.com"]::before {
+	content: "\f504";
+}
 /*--------------------------------------------------------------
 	5.5 Post Navigation
 --------------------------------------------------------------*/
